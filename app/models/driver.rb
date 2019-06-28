@@ -20,7 +20,7 @@ class Driver
     end
 
     def passenger_names
-        rides.map{|passenger| passenger.driver == self}
+        Passenger.all.select {|passenger| passenger.driver == self}
     end
 
     def self.milage_cap(distance)

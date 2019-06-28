@@ -21,7 +21,7 @@ class Passenger
     end
 
     def drivers
-        rides.each{}
+        Driver.all.select{|driver| driver.passenger == self}
     end
 end
 
