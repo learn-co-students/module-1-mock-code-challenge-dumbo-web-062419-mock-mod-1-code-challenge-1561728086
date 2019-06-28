@@ -1,1 +1,7 @@
 
+class Ride
+    
+
+
+
+end
