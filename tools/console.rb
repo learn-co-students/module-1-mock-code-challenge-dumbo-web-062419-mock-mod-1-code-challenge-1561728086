@@ -7,4 +7,8 @@ end
 
 # Put your variables here~!
 
+passenger1= Passenger.new (Amy)
+
+
+
 binding.pry
