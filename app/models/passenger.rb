@@ -18,7 +18,7 @@ class Passenger
 
     def Passenger.premium_members
         premium_members = []
-        @@all.select do |passenger|
+        premium_members << @@all.select do |passenger|
             passenger.total_distance > 100
         end
         return premium_members.uniq
