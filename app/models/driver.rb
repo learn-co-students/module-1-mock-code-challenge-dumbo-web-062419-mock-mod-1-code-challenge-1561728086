@@ -21,16 +21,17 @@ attr_accessor :name
         @@all
     end
 
-    def total_distance
+   def Driver.mileage_cap(distance)
+        @@all.select { |driver| driver.total_distance > distance }
+   end 
+
+   private
+
+   def total_distance
         total = 0.0
         rides.each do |rides|
         total += rides.distance
         end
         return total
     end
-
-   def Driver.mileage_cap(distance)
-        @@all.select {|driver| driver.total_distance > distance}
-    
-   end 
 end

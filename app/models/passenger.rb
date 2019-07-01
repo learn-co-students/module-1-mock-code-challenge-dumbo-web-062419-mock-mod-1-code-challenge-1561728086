@@ -18,7 +18,7 @@ class Passenger
     def total_distance
         total = 0.0
         rides.each do |rides|
-        total += rides.distance
+            total += rides.distance
         end
         return total
     end
@@ -28,7 +28,7 @@ class Passenger
     end
 
     def Passenger.premium_members
-        @@all.select {|passengers| passengers.total_distance > 100}
+        @@all.select { |passengers| passengers.total_distance > 100 }
     end
 
 end 
